@@ -1,1 +1,1 @@
-web: unicorn producthunt.wsgi
+web: gunicorn producthunt.wsgi

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content%}
+{% for product in product.all%}
+<div class="container">
+<div class="row pt-3">
+    <div class="col-2" onclick="window.location='{% url 'detail' product.id %}';" style="cursor : pointer;">
+     <img src="{{product.image.url}}" class="img-fluid " alt="">
+    </div>
+    <div class="col-6 " >
+        <h1 class="textcolor">{{ product.title}}</h1>
+        <p>{{product.summary}}</p>
+    </div>
+    <div class="col-4">
+        {% csrf_token%}
+        <a> <button class=" btn btn-warning btn-dark likes-button " data-id="{{ product.id}}"  target="{{product.id}}" > <span class="oi oi-thumb-up"></span> Upvote  <strong class="target" >{{product.votes_total}}</strong></button></a>
+    </div>
+    </div>
+</div>
+
+
+{% endfor%}
+
+{% endblock%}

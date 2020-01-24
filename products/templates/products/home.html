@@ -11,10 +11,17 @@
         <h1 class="textcolor">{{ product.title}}</h1>
         <p>{{product.summary}}</p>
     </div>
-    <div class="col-4">
+    {% if user.is_authenticated %}
+ <div class="col-4">
         {% csrf_token%}
         <a> <button class=" btn btn-warning btn-dark likes-button " data-id="{{ product.id}}"  target="{{product.id}}" > <span class="oi oi-thumb-up"></span> Upvote  <strong class="target" >{{product.votes_total}}</strong></button></a>
     </div>
+      {% else%}
+            <a> <button onclick="window.location.href = '{% url 'login' %}';" class=" btn btn-warning btn-dark likes-button " data-id="{{ product.id}}"  target="{{product.id}}" > <span class="oi oi-thumb-up"></span> Upvote  <strong class="target" >{{product.votes_total}}</strong></button></a>
+      {% endif%}
+
+
+
     </div>
 </div>
 

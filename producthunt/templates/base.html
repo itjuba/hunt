@@ -36,41 +36,41 @@
 </head>
 <body>
   <header>
-<!--      <div class="container">-->
-<!--   <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">-->
-<!--  <a class="navbar-brand" href="{% url 'home' %}">-->
-<!--       <img src="{% static 'p.png' %}"  class="d-inline-block align-top" width="35" height="35" alt="">-->
-<!--     Product Hunt </a>-->
-<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--    <span class="navbar-toggler-icon"></span>-->
-<!--  </button>-->
-<!--  <div class="collapse  navbar-collapse" id="navbarCollapse">-->
+      <div class="container">
+   <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+  <a class="navbar-brand" href="{% url 'home' %}">
+       <img src="{% static 'p.png' %}"  class="d-inline-block align-top" width="35" height="35" alt="">
+     Product Hunt </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse  navbar-collapse" id="navbarCollapse">
 
-<!--    <ul class="navbar-nav ml-auto ">{% if user.is_authenticated %}-->
-<!--        <li class="nav-item">-->
-<!--        <a class="nav-link" href="javascript:{document.getElementById('logout').submit()}">Logout </a>-->
-<!--            <form id="logout" method="POST" action="{% url 'logout' %}" >-->
-<!--                 {% csrf_token %}-->
-<!--                <input type="hidden">-->
-<!--            </form>-->
-<!--               <li class="nav-item">-->
-<!--        <a class="nav-link" href="{% url 'addprod' %}"><span class="oi oi-plus"></span></a>-->
-<!--      </li>-->
-<!--      </li>-->
-<!--      {% else%}-->
+    <ul class="navbar-nav ml-auto ">{% if user.is_authenticated %}
+        <li class="nav-item">
+        <a class="nav-link" href="javascript:{document.getElementById('logout').submit()}">Logout </a>
+            <form id="logout" method="POST" action="{% url 'logout' %}" >
+                 {% csrf_token %}
+                <input type="hidden">
+            </form>
+               <li class="nav-item">
+        <a class="nav-link" href="{% url 'addprod' %}"><span class="oi oi-plus"></span></a>
+      </li>
+      </li>
+      {% else%}
 
-<!--        <li class="nav-item">-->
-<!--        <a class="nav-link" href="{% url 'signup' %}">Signup </a>-->
-<!--      </li>-->
-<!--        <li class="nav-item">-->
-<!--        <a class="nav-link" href="{% url 'login' %}">Login</a>-->
-<!--      </li>-->
-<!--      {% endif%}-->
+        <li class="nav-item">
+        <a class="nav-link" href="{% url 'signup' %}">Signup </a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="{% url 'login' %}">Login</a>
+      </li>
+      {% endif%}
 
-<!--    </ul>-->
-<!--  </div>-->
-<!--</nav>-->
-<!--          </div>-->
+    </ul>
+  </div>
+</nav>
+          </div>
 </header>
 <main role="main">
 

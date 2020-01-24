@@ -14,7 +14,7 @@ SECRET_KEY = 'x(uqjc=an89seo%ube^cd^ki4(j&o1zr+ewu8h+*u2$nej@$^b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['producthuntn.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,6 +38,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'producthunt.urls'
@@ -121,4 +122,5 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-django_heroku.settings(locals())
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

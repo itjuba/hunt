@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="430edcd6-c9c3-4b71-b7ee-7c04481df744" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/py.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/producthunt/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/producthunt/settings.py" afterDir="false" />
     </list>
@@ -9,6 +10,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +47,34 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/producthunt/static" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="py" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="producthunt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/py.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.py" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -73,10 +109,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="416" y="203" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579033506371">
+    <state x="416" y="203" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579889588239">
       <screen x="0" y="32" width="1366" height="736" />
     </state>
-    <state x="416" y="203" key="#com.intellij.fileTypes.FileTypeChooser/0.32.1366.736@0.32.1366.736" timestamp="1579033506371" />
+    <state x="416" y="203" key="#com.intellij.fileTypes.FileTypeChooser/0.32.1366.736@0.32.1366.736" timestamp="1579889588239" />
     <state x="467" y="156" key="FileChooserDialogImpl" timestamp="1579117338207">
       <screen x="0" y="32" width="1366" height="736" />
     </state>
@@ -85,10 +121,10 @@
       <screen x="0" y="32" width="1366" height="736" />
     </state>
     <state x="180" y="33" key="SettingsEditor/0.32.1366.736@0.32.1366.736" timestamp="1579884719190" />
-    <state x="362" y="227" key="com.intellij.ide.util.TipDialog" timestamp="1579887446968">
+    <state x="362" y="227" key="com.intellij.ide.util.TipDialog" timestamp="1579889444197">
       <screen x="0" y="32" width="1366" height="736" />
     </state>
-    <state x="362" y="227" key="com.intellij.ide.util.TipDialog/0.32.1366.736@0.32.1366.736" timestamp="1579887446968" />
+    <state x="362" y="227" key="com.intellij.ide.util.TipDialog/0.32.1366.736@0.32.1366.736" timestamp="1579889444197" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1579284238090">
       <screen x="0" y="32" width="1366" height="736" />
     </state>

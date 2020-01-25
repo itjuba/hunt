@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="430edcd6-c9c3-4b71-b7ee-7c04481df744" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/templates/products/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -108,6 +107,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="142" y="53" width="1081" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579943198219">
+      <screen x="0" y="32" width="1366" height="736" />
+    </state>
+    <state x="142" y="53" width="1081" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.32.1366.736@0.32.1366.736" timestamp="1579943198219" />
     <state x="416" y="203" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579889588239">
       <screen x="0" y="32" width="1366" height="736" />
     </state>
@@ -132,17 +135,17 @@
       <screen x="0" y="32" width="1366" height="736" />
     </state>
     <state width="1343" height="173" key="GridCell.Tab.0.right/0.32.1366.736@0.32.1366.736" timestamp="1579889644769" />
-    <state x="180" y="33" key="SettingsEditor" timestamp="1579884719190">
+    <state x="180" y="33" key="SettingsEditor" timestamp="1579943221273">
       <screen x="0" y="32" width="1366" height="736" />
     </state>
-    <state x="180" y="33" key="SettingsEditor/0.32.1366.736@0.32.1366.736" timestamp="1579884719190" />
-    <state x="362" y="227" key="com.intellij.ide.util.TipDialog" timestamp="1579889444197">
+    <state x="180" y="33" key="SettingsEditor/0.32.1366.736@0.32.1366.736" timestamp="1579943221273" />
+    <state x="362" y="227" key="com.intellij.ide.util.TipDialog" timestamp="1579943176868">
       <screen x="0" y="32" width="1366" height="736" />
     </state>
-    <state x="362" y="227" key="com.intellij.ide.util.TipDialog/0.32.1366.736@0.32.1366.736" timestamp="1579889444197" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1579284238090">
+    <state x="362" y="227" key="com.intellij.ide.util.TipDialog/0.32.1366.736@0.32.1366.736" timestamp="1579943176868" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1579943210441">
       <screen x="0" y="32" width="1366" height="736" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.32.1366.736@0.32.1366.736" timestamp="1579284238090" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.32.1366.736@0.32.1366.736" timestamp="1579943210441" />
   </component>
 </project>

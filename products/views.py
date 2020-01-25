@@ -13,7 +13,7 @@ def ajax(request):
 
 def home(request):
     product = Product.objects
-    return render(request,'products/home.html' ,{'product': product, })
+    return render(request,'products/home.html' ,{'product': product })
 
 @login_required(login_url='/accounts/signup')
 def addp(request):

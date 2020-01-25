@@ -17,7 +17,7 @@
         <a> <button class=" btn btn-warning btn-dark likes-button " data-id="{{ product.id}}"  target="{{product.id}}"  string="{{product.string}}"> <span class="oi oi-thumb-up"></span> <strong class="string">{{product.string}}</strong> <strong class="target" >{{product.votes_total}}</strong></button></a>
     </div>
       {% else%}
-            <a> <button onclick="window.location.href = '{% url 'login' %}';" class=" btn btn-warning btn-dark likes-button " data-id="{{ product.id}}"  target="{{product.id}}" > <span class="oi oi-thumb-up"></span> Upvote  <strong class="target" >{{product.votes_total}}</strong></button></a>
+            <a> <button onclick="window.location.href = '{% url 'login' %}';" class=" btn btn-warning btn-dark likes-button " data-id="{{ product.id}}"  target="{{product.id}}" string="{{product.string}}"> <span class="oi oi-thumb-up"></span> <strong class="string">{{product.string}}</strong> <strong class="target" >{{product.votes_total}}</strong></button></a>
       {% endif%}
 
 

@@ -13,7 +13,7 @@ def ajax(request):
 
 def home(request):
     product = Product.objects
-    return render(request,'products/home.html' ,{'product': product})
+    return render(request,'products/home.html' ,{'product': product, })
 
 @login_required(login_url='/accounts/signup')
 def addp(request):
@@ -50,18 +50,26 @@ def upvote(request):
         # id = request.POST.get('product_id')
         ans_id = json.loads((request.body.decode('utf-8')))
         id = ans_id["product_id"]
-        print(id)
 
 
+        if id:
+         product = get_object_or_404(Product, pk=id)
+         if product:
+             if product.string  == 'like':
+                     product.votes_total -= 1
+                     product.string = "dislike"
+                     print(product.string)
+                     product.save()
+                     return JsonResponse({'likes': product.votes_total,'string':product.string})
 
-    if id:
-        product = get_object_or_404(Product,pk=id)
-        if product:
-          product.votes_total+=1
-          product.save()
-
-
-          return JsonResponse({'likes': product.votes_total})
+             else:
+                 product = get_object_or_404(Product,pk=id)
+                 if product:
+                      if product.string == 'dislike':
+                            product.votes_total+=1
+                            product.string = 'like'
+                            product.save()
+                            return JsonResponse({'likes': product.votes_total,'string':'like'})
 
 
 def homeupvote(request,product_id):

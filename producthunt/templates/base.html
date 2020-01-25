@@ -102,12 +102,13 @@ $('.likes-button').click(function(){
  var csrftoken = $('[name="csrfmiddlewaretoken"]').val();
  var el= this;
  var ajaxdata = $(this).attr('data-id');
-
+ var ajaxstring = $(this).attr('string');
+    console.log(ajaxstring)
 
       $.ajax({
                type: "POST",
                url: '/ajax/upvote/',
-               data: JSON.stringify({'product_id' : ajaxdata}),
+               data: JSON.stringify({'product_id' : ajaxdata,'string': ajaxstring}),
                 headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
@@ -116,8 +117,15 @@ $('.likes-button').click(function(){
 
                success: function(response) {
                 var up = response['likes']
-                       console.log(up)
+                var string = response['string']
+                console.log(string);
+                   console.log(up)
                        $(el).find('.target').html(up);
+                        $(el).find('.string').html(string);
+
+
+
+
                 },
                 error: function(rs, e) {
                        alert(rs.responseText);

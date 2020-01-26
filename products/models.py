@@ -12,9 +12,14 @@ class Product(models.Model):
     url = models.TextField()
     image = models.ImageField(upload_to='images/')
     icon = models.ImageField(upload_to='images')
-    votes_total = models.IntegerField(default=1)
+    votes_total_like = models.IntegerField()
+    votes_total_dislike = models.IntegerField()
     hunter = models.ForeignKey(User, on_delete=models.CASCADE)
-    string = models.CharField(default='like',max_length=20)
+    stringlike = models.CharField(default='like',max_length=20)
+    stringdislike = models.CharField(default='dislike', max_length=20)
+    vote = models.CharField(default='False',max_length=20)
+
+
 
     def __str__(self):
         return self.title

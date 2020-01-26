@@ -117,13 +117,18 @@ $('.likes-button').click(function(){
 
                success: function(response) {
                 var up = response['likes']
-                var string = response['string']
-                console.log(string);
+                var dislike = response['dislike']
+                console.log(dislike)
                    console.log(up)
                        $(el).find('.target').html(up);
-                        $(el).find('.string').html(string);
+                       $('.dislike-button').find('.distarget').html(dislike);
 
 
+                        if ($('#button2').attr('disabled',true))
+                        {
+                          $('#button2').attr('disabled',false)
+                          $('#button1').attr('disabled',true)
+                        }
 
 
                 },
@@ -133,8 +138,50 @@ $('.likes-button').click(function(){
           });
     })
 </script>
-  </script>
+  <script>
+  $('.dislike-button').click(function(){
+ var csrftoken = $('[name="csrfmiddlewaretoken"]').val();
+ var el= this;
+ var ajaxdata = $(this).attr('data-id');
+ var ajaxstring = $(this).attr('distring');
+    console.log(ajaxstring)
 
-  </script>
+      $.ajax({
+               type: "POST",
+               url: '/ajax/upvote2/',
+               data: JSON.stringify({'product_id' : ajaxdata,'string': ajaxstring}),
+                headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                "X-CSRFToken": csrftoken
+            },
+
+               success: function(response) {
+                var up = response['dislike']
+                var like = response['like']
+                console.log(like);
+                   console.log(up)
+                       $(el).find('.distarget').html(up);
+                       $('.likes-button').find('.target').html(like);
+
+
+
+                       if($('#button1').prop("disabled")) {
+                           $('#button1').attr("disabled", false);
+                           $('.#button2').attr('disabled',true)
+                             } else {
+                              $('#button1').attr("disabled", true);
+                               }
+
+                },
+                error: function(rs, e) {
+                       alert(rs.responseText);
+                }
+          });
+    })
+</script>
+
+
+
 </body>
 </html>

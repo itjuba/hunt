@@ -43,6 +43,7 @@ def detail(request,product_id):
     product = get_object_or_404(Product,pk=product_id)
     return render(request,'products/detail.html',{'product':product})
 
+
 @login_required(login_url='/accounts/signup')
 def upvote(request):
 
@@ -55,21 +56,37 @@ def upvote(request):
         if id:
          product = get_object_or_404(Product, pk=id)
          if product:
-             if product.string  == 'like':
-                     product.votes_total -= 1
-                     product.string = "dislike"
-                     print(product.string)
+                     product.votes_total_like += 1
+                     product.vote == 'True'
                      product.save()
-                     return JsonResponse({'likes': product.votes_total,'string':product.string})
+                     if product.votes_total_dislike >0:
+                      product.votes_total_dislike-=1
+                      product.save()
 
-             else:
-                 product = get_object_or_404(Product,pk=id)
-                 if product:
-                      if product.string == 'dislike':
-                            product.votes_total+=1
-                            product.string = 'like'
-                            product.save()
-                            return JsonResponse({'likes': product.votes_total,'string':'like'})
+         return JsonResponse({'likes': product.votes_total_like , 'dislike': product.votes_total_dislike})
+
+
+@login_required(login_url='/accounts/signup')
+def upvote2(request):
+
+    if request.method == 'POST':
+        # id = request.POST.get('product_id')
+        ans_id = json.loads((request.body.decode('utf-8')))
+        id = ans_id["product_id"]
+
+
+        if id:
+         product = get_object_or_404(Product, pk=id)
+         if product:
+
+                     if product.votes_total_like > 0:
+                      product.votes_total_like-=1
+                      product.save
+                     else:
+                         product.votes_total_dislike += 1
+                         product.save()
+
+         return JsonResponse({'dislike' : product.votes_total_dislike ,'like' : product.votes_total_like})
 
 
 def homeupvote(request,product_id):

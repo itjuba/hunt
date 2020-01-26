@@ -14,10 +14,12 @@
     {% if user.is_authenticated %}
  <div class="col-4">
         {% csrf_token%}
-        <a> <button class=" btn btn-warning btn-dark likes-button " data-id="{{ product.id}}"  target="{{product.id}}"  string="{{product.string}}"> <span class="oi oi-thumb-up"></span> <strong class="string">{{product.string}}</strong> <strong class="target" >{{product.votes_total}}</strong></button></a>
+        <a> <button class=" btn btn-warning btn-dark likes-button " data-id="{{ product.id}}" id="button1" > <span class="oi oi-thumb-up"></span> <strong class="string">{{product.stringlike}}</strong> <strong class="target" >{{product.votes_total_like}}</strong> </button></a>
+        <a> <button class=" btn btn-warning btn-dark dislike-button " data-id="{{ product.id}}" id="button2"> <span class="oi oi-thumb-up"></span> <strong class="distring">{{product.stringdislike}}</strong> <strong class="distarget" >{{product.votes_total_dislike}}</strong></button></a>
+
     </div>
       {% else%}
-            <a> <button onclick="window.location.href = '{% url 'login' %}';" class=" btn btn-warning btn-dark likes-button " data-id="{{ product.id}}"  target="{{product.id}}" string="{{product.string}}"> <span class="oi oi-thumb-up"></span> <strong class="string">{{product.string}}</strong> <strong class="target" >{{product.votes_total}}</strong></button></a>
+<!--            <a> <button onclick="window.location.href = '{% url 'login' %}';" class=" btn btn-warning btn-dark likes-button " data-id="{{ product.id}}"  target="{{product.id}}" string="{{product.string}}"> <span class="oi oi-thumb-up"></span> <strong class="string">{{product.string}}</strong> <strong class="target" >{{product.votes_total}}</strong></button></a>-->
       {% endif%}
 
 

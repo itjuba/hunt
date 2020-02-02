@@ -2,22 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="430edcd6-c9c3-4b71-b7ee-7c04481df744" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/images/51840662_291026234919000_5018055654808485888_n_QfcPHld.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/83331104_1634275643382291_80314368016777216_o.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0003_auto_20200126_0759.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0004_auto_20200126_0818.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0005_auto_20200126_0919.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0006_auto_20200126_0949.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0007_auto_20200126_0949.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0008_auto_20200126_1021.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0009_auto_20200126_1023.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0010_product_vote.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0011_auto_20200126_1451.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/51832431_356758731584338_1056912144974479360_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/51832431_356758731584338_1056912144974479360_n_Bwm1DS1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/51840662_291026234919000_5018055654808485888_n_4gg0Qvn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/51840662_291026234919000_5018055654808485888_n_xwZd0OU.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/80404609_2662906153789433_1253296629776121856_o_4QuqMQ2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/82135512_455952755310097_5758600538824376320_n_SMVbszJ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/82135512_455952755310097_5758600538824376320_n_a7jD7kh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/82135512_455952755310097_5758600538824376320_n_ixwZWDp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/82135512_455952755310097_5758600538824376320_n_k4IetOX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/82135512_455952755310097_5758600538824376320_n_ytAVZLK.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/82261685_500171850685165_2849407116643401728_n_TZ5t8fO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/82261685_500171850685165_2849407116643401728_n_YrhHP72.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/82261685_500171850685165_2849407116643401728_n_fEf7mZW.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/83834565_179383906465177_5597014076623421440_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0012_auto_20200126_1511.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0013_auto_20200126_1515.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/producthunt/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/producthunt/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/templates/products/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,13 +159,23 @@
       <screen x="0" y="32" width="1366" height="736" />
     </state>
     <state x="180" y="33" key="SettingsEditor/0.32.1366.736@0.32.1366.736" timestamp="1579943221273" />
-    <state x="362" y="227" key="com.intellij.ide.util.TipDialog" timestamp="1580038752097">
+    <state x="362" y="227" key="com.intellij.ide.util.TipDialog" timestamp="1580627656077">
       <screen x="0" y="32" width="1366" height="736" />
     </state>
-    <state x="362" y="227" key="com.intellij.ide.util.TipDialog/0.32.1366.736@0.32.1366.736" timestamp="1580038752097" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1579943210441">
+    <state x="362" y="227" key="com.intellij.ide.util.TipDialog/0.32.1366.736@0.32.1366.736" timestamp="1580627656077" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1580155602137">
       <screen x="0" y="32" width="1366" height="736" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.32.1366.736@0.32.1366.736" timestamp="1579943210441" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.32.1366.736@0.32.1366.736" timestamp="1580155602137" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/products/admin.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

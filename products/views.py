@@ -8,7 +8,8 @@ import json
 # Create your views here.
 def ajax(request):
     product = Product.objects
-    return render(request, 'ajax.html',{'product': product})
+    count  = product.count()
+    return render(request, 'ajax.html',{'product': product })
 
 
 def home(request):
@@ -80,11 +81,11 @@ def upvote2(request):
          if product:
 
                      if product.votes_total_like > 0:
-                      product.votes_total_like-=1
-                      product.save
-                     else:
-                         product.votes_total_dislike += 1
+                         product.votes_total_like-=1
                          product.save()
+
+                     product.votes_total_dislike += 1
+                     product.save()
 
          return JsonResponse({'dislike' : product.votes_total_dislike ,'like' : product.votes_total_like})
 

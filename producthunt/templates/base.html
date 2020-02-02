@@ -86,26 +86,252 @@
   </div>
 </footer>
 
+
 <!--  <script>-->
-<!--$('.likes-button').click(function(){-->
-<!--    var catid;-->
-<!--    catid = $(this).attr("data-catid");-->
-<!--     $.get('/ajax/upvote/', {product_id: catid}, function(data){-->
-<!--               $('#votes_total').html(data);-->
-<!--               $('#likes').hide();-->
-<!--           });-->
+<!--   $(function(){-->
+
+<!--$('.btn').find('.likes-button').click(function(){-->
+<!--var csrftoken = $('[name="csrfmiddlewaretoken"]').val();-->
+<!-- var el= this;-->
+
+
+
+<!--   var button1 = $(el).attr('id');-->
+<!--   var button2 = $('.dislike-button').attr('id')-->
+
+<!-- var ajaxdata = $(this).attr('data-id');-->
+
+<!-- var ajaxstring = $(this).attr('string');-->
+<!--    console.log(ajaxstring)-->
+
+<!--      $.ajax({-->
+<!--               type: "POST",-->
+<!--               url: '/ajax/upvote/',-->
+<!--               data: JSON.stringify({'product_id' : ajaxdata,'string': ajaxstring}),-->
+<!--                headers: {-->
+<!--                'Accept': 'application/json',-->
+<!--                'Content-Type': 'application/json',-->
+<!--                "X-CSRFToken": csrftoken-->
+<!--            },-->
+
+<!--               success: function(response) {-->
+<!--                var up = response['likes']-->
+<!--                var dislike = response['dislike']-->
+<!--                console.log(dislike)-->
+<!--                   console.log(up)-->
+<!--                       $(el).find('.target').html(up);-->
+<!--                       $('.dislike-button').find('.distarget').html(dislike);-->
+
+
+
+
+<!--                           console.log(button1)-->
+<!--                           console.log(button2)-->
+
+<!--                          $('#'+button1).attr("disabled",true)-->
+<!--                        if ($('#'+button2).attr('disabled',true))-->
+<!--                        {-->
+<!--                          $('#'+button2).attr('disabled',false)-->
+<!--                          $('#'+button1).attr('disabled',true)-->
+<!--                        }-->
+
+
+
+
+
+
+<!--                },-->
+<!--                error: function(rs, e) {-->
+<!--                       alert(rs.responseText);-->
+<!--                }-->
+<!--          });-->
+<!--    })-->
+
 <!--});-->
+<!--$('.btn').find('.dislike-button').click(function(){-->
+<!-- var csrftoken = $('[name="csrfmiddlewaretoken"]').val();-->
+<!-- var em = this;-->
+
+<!--   var button1 = $('.likes-button').attr('id');-->
+<!--    var button2 = $(em).attr('id')-->
+
+
+<!-- var ajaxdata = $(this).attr('data-id');-->
+<!-- var ajaxstring = $(this).attr('distring');-->
+<!--    console.log(ajaxstring)-->
+
+<!--      $.ajax({-->
+<!--               type: "POST",-->
+<!--               url: '/ajax/upvote2/',-->
+<!--               data: JSON.stringify({'product_id' : ajaxdata,'string': ajaxstring}),-->
+<!--                headers: {-->
+<!--                'Accept': 'application/json',-->
+<!--                'Content-Type': 'application/json',-->
+<!--                "X-CSRFToken": csrftoken-->
+<!--            },-->
+
+<!--               success: function(response) {-->
+<!--                var up = response['dislike']-->
+<!--                var like = response['like']-->
+<!--                console.log(like);-->
+<!--                   console.log(up)-->
+<!--                       $(em).find('.distarget').html(up);-->
+<!--                       $('.likes-button').find('.target').html(like);-->
+
+
+
+<!--                           console.log(button1)-->
+<!--                           console.log(button2)-->
+
+
+<!--                       if($('#'+button1).prop("disabled")) {-->
+<!--                           $('#'+button1).attr("disabled", false);-->
+<!--                           $('#'+button2).attr('disabled',true)-->
+<!--                             } else {-->
+<!--                              $('#'+button1).attr("disabled", true);-->
+<!--                               }-->
+
+<!--                },-->
+<!--                error: function(rs, e) {-->
+<!--                       alert(rs.responseText);-->
+<!--                }-->
+<!--          });-->
+<!--    })-->
+
 <!--</script>-->
 
-      <script>
-$('.likes-button').click(function(){
- var csrftoken = $('[name="csrfmiddlewaretoken"]').val();
- var el= this;
- var ajaxdata = $(this).attr('data-id');
- var ajaxstring = $(this).attr('string');
-    console.log(ajaxstring)
+<!--  <script>-->
 
-      $.ajax({
+<!--   $(function(){-->
+
+<!--$('.btn').find('.likes-button').click(function(){-->
+<!--var csrftoken = $('[name="csrfmiddlewaretoken"]').val();-->
+<!-- var el= this;-->
+
+
+
+<!--   var button1 = $(el).attr('id');-->
+<!--   var button2 = $('.dislike-button').attr('id')-->
+
+<!-- var ajaxdata = $(this).attr('data-id');-->
+
+<!-- var ajaxstring = $(this).attr('string');-->
+<!--    console.log(ajaxstring)-->
+
+<!--      $.ajax({-->
+<!--               type: "POST",-->
+<!--               url: '/ajax/upvote/',-->
+<!--               data: JSON.stringify({'product_id' : ajaxdata,'string': ajaxstring}),-->
+<!--                headers: {-->
+<!--                'Accept': 'application/json',-->
+<!--                'Content-Type': 'application/json',-->
+<!--                "X-CSRFToken": csrftoken-->
+<!--            },-->
+
+<!--               success: function(response) {-->
+<!--                var up = response['likes']-->
+<!--                var dislike = response['dislike']-->
+<!--                console.log(dislike)-->
+<!--                   console.log(up)-->
+<!--                       $(el).find('.target').html(up);-->
+<!--                       $('.dislike-button').find('.distarget').html(dislike);-->
+
+
+
+
+<!--                           console.log(button1)-->
+<!--                           console.log(button2)-->
+
+<!--                          $('#'+button1).attr("disabled",true)-->
+<!--                        if ($('#'+button2).attr('disabled',true))-->
+<!--                        {-->
+<!--                          $('#'+button2).attr('disabled',false)-->
+<!--                          $('#'+button1).attr('disabled',true)-->
+<!--                        }-->
+
+
+
+
+
+
+<!--                },-->
+<!--                error: function(rs, e) {-->
+<!--                       alert(rs.responseText);-->
+<!--                }-->
+<!--          });-->
+<!--    })-->
+
+<!--});-->
+<!--$('.btn').find('.dislike-button').click(function(){-->
+<!-- var csrftoken = $('[name="csrfmiddlewaretoken"]').val();-->
+<!-- var em = this;-->
+
+<!--   var button1 = $('.likes-button').attr('id');-->
+<!--    var button2 = $(em).attr('id')-->
+
+
+<!-- var ajaxdata = $(this).attr('data-id');-->
+<!-- var ajaxstring = $(this).attr('distring');-->
+<!--    console.log(ajaxstring)-->
+
+<!--      $.ajax({-->
+<!--               type: "POST",-->
+<!--               url: '/ajax/upvote2/',-->
+<!--               data: JSON.stringify({'product_id' : ajaxdata,'string': ajaxstring}),-->
+<!--                headers: {-->
+<!--                'Accept': 'application/json',-->
+<!--                'Content-Type': 'application/json',-->
+<!--                "X-CSRFToken": csrftoken-->
+<!--            },-->
+
+<!--               success: function(response) {-->
+<!--                var up = response['dislike']-->
+<!--                var like = response['like']-->
+<!--                console.log(like);-->
+<!--                   console.log(up)-->
+<!--                       $(em).find('.distarget').html(up);-->
+<!--                       $('.likes-button').find('.target').html(like);-->
+
+
+
+<!--                           console.log(button1)-->
+<!--                           console.log(button2)-->
+
+
+<!--                       if($('#'+button1).prop("disabled")) {-->
+<!--                           $('#'+button1).attr("disabled", false);-->
+<!--                           $('#'+button2).attr('disabled',true)-->
+<!--                             } else {-->
+<!--                              $('#'+button1).attr("disabled", true);-->
+<!--                               }-->
+
+<!--                },-->
+<!--                error: function(rs, e) {-->
+<!--                       alert(rs.responseText);-->
+<!--                }-->
+<!--          });-->
+<!--    })-->
+
+<!--</script>-->
+
+ <script>
+
+
+
+
+
+$('.likes-button, .dislike-button').click(function(e) {
+ var csrftoken = $('[name="csrfmiddlewaretoken"]').val();
+  const $target = $(e.target);
+  const isDisabled = $target.prop("disabled");
+
+ var el= this;
+
+   var ajaxdata = $(this).attr('data-id');
+   var ajaxstring = $(this).attr('string');
+
+  $target.prop("disabled", !isDisabled);
+   $.ajax({
                type: "POST",
                url: '/ajax/upvote/',
                data: JSON.stringify({'product_id' : ajaxdata,'string': ajaxstring}),
@@ -122,64 +348,18 @@ $('.likes-button').click(function(){
                    console.log(up)
                        $(el).find('.target').html(up);
                        $('.dislike-button').find('.distarget').html(dislike);
+                        console.log("Response: ", response);
+                         $target.siblings('button').prop("disabled", isDisabled);
+                         console.log($target)
+                         }
+});
+
+});
 
 
-                        if ($('#button2').attr('disabled',true))
-                        {
-                          $('#button2').attr('disabled',false)
-                          $('#button1').attr('disabled',true)
-                        }
-
-
-                },
-                error: function(rs, e) {
-                       alert(rs.responseText);
-                }
-          });
-    })
 </script>
-  <script>
-  $('.dislike-button').click(function(){
- var csrftoken = $('[name="csrfmiddlewaretoken"]').val();
- var el= this;
- var ajaxdata = $(this).attr('data-id');
- var ajaxstring = $(this).attr('distring');
-    console.log(ajaxstring)
-
-      $.ajax({
-               type: "POST",
-               url: '/ajax/upvote2/',
-               data: JSON.stringify({'product_id' : ajaxdata,'string': ajaxstring}),
-                headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-                "X-CSRFToken": csrftoken
-            },
-
-               success: function(response) {
-                var up = response['dislike']
-                var like = response['like']
-                console.log(like);
-                   console.log(up)
-                       $(el).find('.distarget').html(up);
-                       $('.likes-button').find('.target').html(like);
 
 
-
-                       if($('#button1').prop("disabled")) {
-                           $('#button1').attr("disabled", false);
-                           $('.#button2').attr('disabled',true)
-                             } else {
-                              $('#button1').attr("disabled", true);
-                               }
-
-                },
-                error: function(rs, e) {
-                       alert(rs.responseText);
-                }
-          });
-    })
-</script>
 
 
 
